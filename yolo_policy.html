@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>개인정보 처리방침</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e82fafbb-638e-48b6-bb9f-f6a8fea546cb" class="page sans"><header><h1 class="page-title">개인정보 처리방침</h1></header>
+① 회원가입 및 관리
+회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별․인증, 회원자격 유지․관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 각종 고지․통지 등을 목적으로 개인정보를 처리합니다.
+② 서비스 제공
+서비스 제공, 콘텐츠 제공 및 재배포, 맞춤서비스 제공, 본인인증 등을 목적으로 개인정보를 처리합니다.
+③ 마케팅, 광고 및 보안정책 수립
+인구통계학적 특성에 따른 서비스 제공 및 광고의 게재, 서비스의 유효성 확인, 접속빈도 파악, 회원의 서비스 이용에 대한 통계, 보안정책 수립 등의 목적으로 개인정보를 처리합니다.</p><p id="6d5103b9-6644-4e40-bc7e-cf0e508acd99" class=""><strong>제2조(개인정보의 처리 및 보유기간)</strong></p><p id="ebd32e9c-170b-4a80-aa5e-96e661df1f0e" class="">① 회원가입 및 관리목적으로 수집된 개인정보는 고객의 회원 가입일로부터 회원 탈퇴 일까지 보유ㆍ이용됩니다. 단, 회원 탈퇴일 이후에는 사고 조사, 분쟁 해결, 민원처리, 법령상 의무이행만을 위하여 보유ㆍ이용됩니다.
+② 서비스 제공의 목적으로 수집된 개인정보는 수집ㆍ이용에 대한 동의일로부터 고객에 대한 정보제공ㆍ조회 동의의 효력기간까지 보유ㆍ이용됩니다. 단, 동의의 효력 만료 이후에는 사고조사, 분쟁해결, 민원처리, 법령상 의무이행만을 위하여 보유ㆍ이용됩니다.
+③ 마케팅, 광고 및 보안정책 수립 목적으로 수집된 개인정보는 회원 가입일로부터 회원 탈퇴 일까지 보유ㆍ이용됩니다. 단, 회원 탈퇴일 이후에는 사고조사, 분쟁해결, 민원처리, 법령상 의무이행만을 위하여 보유ㆍ이용됩니다.</p><p id="fccddda8-25c6-4bbd-8cfa-607c022441c2" class=""><strong>제3조(개인정보의 제3자 제공)</strong></p><p id="a824ed88-4cb2-410a-83fa-252b92161620" class="">회사는 원칙적으로 정보주체의 개인정보를 제1조에서 명시한 목적 범위 내에서 처리하며, 정보주체의 사전 동의 없이는 본래의 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.</p><p id="5d0ea174-02fa-4281-92c6-0db158ad7a41" class=""><strong>제4조(개인정보처리 위탁)</strong></p><p id="cf52bf91-1e6e-4254-9cab-1b2be3967137" class="">회사의 개인정보 처리에 대한 수탁업체 및 위탁업무 내용은 없습니다. </p><p id="3ef67943-2c44-45e2-864c-f893b08b0a15" class=""><strong>제5조(정보주체의 권리․의무 및 행사방법)</strong></p><p id="71fc44bf-d1ba-4375-9245-518094f3ed07" class="">① 정보주체는 회사에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
+- 개인정보 열람요구
+- 오류 등이 있을 경우 정정 요구
+- 삭제요구
+- 처리정지 요구
+② 제1항에 따른 권리 행사는 회사에 대해 서면, 전화, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 회사는 이에 대해 지체없이 조치하겠습니다.
+③ 정보주체가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 회사는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제공하지 않습니다.
+④ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.
+⑤ 정보주체는 개인정보 보호법 등 관계법령을 위반하여 회사가 처리하고 있는 정보주체 본인이나 타인의 개인정보 및 사생활을 침해하여서는 아니됩니다.</p><p id="47665c69-fd00-4ead-b801-2e5a67cbdc0a" class=""><strong>제6조(처리하는 개인정보의 항목)</strong></p><p id="07e06f1c-07c5-4b6b-87b9-73dd4dedada5" class="">회사는 모든 고객에게 더 나은 서비스 제공을 목적으로 아래에 해당하는 항목 중 최소한의 개인정보만을 수집하며 수집한 정보를 목적 외로 사용하거나, 고객의 동의 없이 외부에 공개하지 않습니다.
+① 고객이 제공하는 정보
+· 필수항목 : 이름, 이메일 주소
+· 선택항목 : 성별, 거주지역, 생년월일, 소개글, 사용자 프로필 사진
+② <strong>고객이 서비스를 사용할 때 수집하는 정보</strong>
+서비스 설치 및 사용 시점, 사용자의 단말 구분값 등 서비스 활동에 대한 정보를 수집하며 이러한 정보는 아래 내용이 포함됩니다.
+<strong><mark class="highlight-red_background">기기정보</mark></strong><mark class="highlight-red_background"> : 고객의 사용 단말(하드웨어) 모델, 운영체제 종류 및 버전, 고유 기기 식별자, 모바일 네트워크 정보
+</mark><strong><mark class="highlight-red_background">로그정보</mark></strong><mark class="highlight-red_background"> : 고객이 직접 입력한 세부정보(예. 검색어, 해시태그), 인터넷 프로토콜 주소(사용자의 IP Address), 고객의 서비스 접속 경로(URL), 브라우저 또는 사용자 계정 식별 쿠키
+</mark><strong><mark class="highlight-red_background">위치정보</mark></strong><mark class="highlight-red_background"> : 서비스 사용시 사용자의 실제 위치에 대한 정보(고객의 단말에서 제공하는 GPS 정보), 사용자의 위치정보는 메모리에서 처리되며 사용 후 즉시 삭제
+</mark><strong><mark class="highlight-red_background">로컬 저장소</mark></strong><mark class="highlight-red_background"> : 브라우저 웹 저장소(HTML5 포함) 및 데이터 캐시 정보 (브라우저 웹 저장소(Web Storage) 사용이 불가한 경우 쿠키 또는 유사한 기술을 사용하여 고객의 브라우저 또는 기기를 식별하는 정보 수집 )</mark> <strong>⇒ 다시 확인 필요 내부적으로 저장하는 건 찜 목록</strong>
+③ 마케팅, 광고 및 보안정책 수립 관련
+인구통계학적 특성에 따른 서비스 제공 및 광고의 게재, 서비스의 유효성 확인, 접속빈도 파악과 같은 목적으로 고객님의 개인정보를 수집합니다.<mark class="highlight-red_background">
+</mark><strong><mark class="highlight-red_background">회원의 서비스이용에 대한 통계 목적</mark></strong><mark class="highlight-red_background"> : 고객 아이디, 접속 일시, 접속 로그, 불량이용 기록, IP Address, 고유 기기 식별자, Mac Address 등</mark> <strong>⇒ X</strong><mark class="highlight-red_background">
+</mark><strong><mark class="highlight-red_background">보안정책 수립 목적</mark></strong><mark class="highlight-red_background"> : 운영체제 종류, 운영체제 주요 보안패치 여부, 방화벽 설정, 원격접속 설정, 브라우저 버전, 키보드 타입 등 </mark><strong>⇒ X</strong></p><p id="88dcabb4-f32f-4c3c-a766-99257dadb8ab" class=""><strong>제7조(개인정보 자동 수집 장치의 설치∙운영 및 거부에 관한 사항)</strong></p><p id="7488b5de-a94e-4533-97f8-b499f0e6c3eb" class=""><mark class="highlight-red_background">① 회사는 고객님에게 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용합니다.</mark><mark class="highlight-yellow_background">
+</mark><mark class="highlight-red_background">② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 고객님의 컴퓨터 브라우저에게 보내는 소량의 정보이며 고객님의 PC 컴퓨터 또는 스마트폰 저장소에 저장되기도 합니다.
+</mark><strong><mark class="highlight-red_background">가</mark></strong><mark class="highlight-red_background">. 쿠키의 사용목적 : 고객님이 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부, 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다.
+</mark><strong><mark class="highlight-red_background">나</mark></strong><mark class="highlight-red_background">. 쿠키의 설치∙운영 및 거부 : 웹브라우저 상단의 도구&gt;인터넷 옵션&gt;개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을 거부 할 수 있습니다.
+</mark><strong><mark class="highlight-red_background">다</mark></strong><mark class="highlight-red_background">. 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.</mark><strong>⇒ 쿠키사용 안함</strong></p><p id="eef05ad1-8ffe-4944-8ae2-43a10259c03b" class=""><strong>제8조(개인정보의 파기절차 및 파기방법)</strong></p><p id="4d930756-ba85-448f-82d8-f3195355259f" class="">① 회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기하며 개인정보보호법 제39조의6에 근거하여 1년간 서비스를 이용하지 않는 회원의 개인정보는 별도로 분리보관을 수행합니다.
+② 고객님으로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.
+③ 개인정보 파기의 절차 및 방법은 다음과 같습니다.
+- 파기절차
+이용자가 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 DB로 옮겨져 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다. </p><p id="69c21e4a-3889-4fc2-9a4f-c9f947fd5910" class="">- 파기방법
+<mark class="highlight-red_background">회사는 전자적 파일 형태로 기록, 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 이용하여 삭제하며, 종이 문서에 기록․저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</mark></p><p id="4898a70c-1149-47b0-bbf6-a93d215db389" class=""><strong>제9조(개인정보의 안전성 확보조치)</strong></p><p id="d9c7ecd3-3caa-4cc0-bd56-aa47ae549447" class="">회사는 개인정보 보호법 제29조에 따라 다음 각 호와 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.
+<mark class="highlight-red_background">- 개인정보의 암호화
+고객님의 비밀번호는 암호화 되어 관리되고 있으며, 중요 데이터 파일 전송 시 암호화 및 파일 잠금 기능을 통해 보안을 하고 있습니다.
+- 해킹 등에 대비한 기술적 대책
+회사는 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신·점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다.
+- 개인정보처리시스템 접근 제한
+개인정보를 처리하는 데이터베이스시스템에 접근권한(변경, 부여, 말소)을 부여하여 접근통제를 하고 있으며, 침입차단시스템을 이용하여 외부로부터의 접근을 통제하고 있습니다.
+- 개인정보 취급 직원의 최소화 및 교육
+개인정보를 취급하는 직원을 최소화하여 개인정보를 취급하고 있으며, 개인정보보호 교육을 통해 집중관리하고 있습니다.</mark> <strong>⇒ 로그인 시 카카오 로그인 등은 문제X </strong></p><p id="bb10a125-b268-4cc4-a249-db62615ec0d8" class=""><strong>제10조(개인정보 처리방침의 변경)</strong></p><p id="565043dc-dbbd-4b5d-a23a-d52dba66e209" class="">회사가 개인정보 처리방침을 변경하는 경우에는 변경 및 시행의 시기, 변경된 내용을 지속적으로 공개하며, 변경된 내용은 고객이 쉽게 확인할 수 있도록 변경 전ㆍ후를 비교하여 공개합니다.</p><p id="a460fab6-07e3-4ac7-bc12-a972ea7022ed" class=""><strong>제11조(권익침해 구제방법)</strong></p><p id="27fc9355-0c36-4e73-a933-a7c2b7290ff7" class="">개인정보 침해에 대한 신고, 상담이 필요하실 경우 한국인터넷진흥원(KISA) 개인정보 침해신고센터로 문의하시기 바라며, 개인정보침해를 통한 금전적, 정신적 피해를 입으신 경우에는 개인정보 분쟁조정위원회에 피해구제를 신청하실 수 있습니다.</p><p id="67f4e84c-f1c5-43c9-a6af-58ede714b225" class=""><strong>제12조(개인정보보호책임자 등)</strong></p><p id="82335b1a-7f02-486a-9dc4-f12b8c1d6fb6" class="">회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
+성명: 
+연락처: </p><p id="7c7ecbed-a0e4-499a-8798-fe20c597ae45" class="">[부칙]
+본 약관은 2021년 00월 00일부터 적용됩니다.</p><p id="8f9e84ae-ff85-4231-9567-12256e869d21" class="">
+</p></div></article></body></html>
